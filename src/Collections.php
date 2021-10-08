@@ -60,7 +60,7 @@ class Collections implements iCollections
         $multidimensionalArray = [];
 
         foreach ($this->collections as $array) {
-            $multidimensionalArray = self::mergeArraysIntoMultidimensionalArrayHelper(array: $array, multidimensionalArray: $multidimensionalArray);
+            $multidimensionalArray = Collections::mergeArraysIntoMultidimensionalArrayHelper(array: $array, multidimensionalArray: $multidimensionalArray);
         }
 
         return $multidimensionalArray;
