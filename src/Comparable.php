@@ -8,8 +8,9 @@ interface Comparable
 {
 
     /**
+     * @param object $o
      * @return int
      */
-    public function compareTo(): int;
+    public function compareTo(object $o): int;
 
 }
